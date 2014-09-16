@@ -1,0 +1,54 @@
+Bash One-liners to Validate Vulnerabilities on Multiple Hosts
+http://blog.opensecurityresearch.com/2012/10/for-loops-bash-one-liners-to-validate.html 
+-------------------------------------------------------------
+
+-------------------- CVE-2011-1473
+Nessus: SSL Version 2 (v2) Protocol Detection
+
+root@kali:~# for i in `cat Affected-SSLv2-IPs.txt`; do echo -e "\n----START "$i"----" ; echo -e "HEAD / HTTP/1.0\n\n" | openssl s_client -connect "$i" -ssl2; echo -e "\n----END "$i"----"; done > SSLv2-Output.txt
+
+-------------------- CVE-2009-3555
+Nessus: SSL / TLS Renegotiation DoS & SSL / TLS Renegotiation Handshakes MiTM Plaintext Data Injection
+
+root@kali:~# paste SSL-Renego-IPs.txt | while read IP port; do echo "----START "$IP":"$port"----"; echo -e "HEAD / HTTP/1.0\nR\n\n" | ncat --ssl "$IP" "$port"; echo -e "\n----END "$IP":"$port"----\n"; done
+
+Where SSL-Renego-IPs.txt has an IP address and port number on each line separated by a space. You can use OpenSSL instead of Ncat as well.
+
+-------------------- CVE-2008-1447
+Nessus: Multiple Vendor DNS Query ID Field Prediction Cache Poisoning
+
+root@kali:~# for i in `DNS-CachePoison-IPs.txt`; do dig @"$i" +short porttest.dns-oarc.net TXT; done; > DNS-CachePoison-Output.txt
+
+-------------------- CVE-2006-0987
+Nessus: DNS Server Spoofed Request Amplification DDoS
+
+root@kali:~# for i in `cat DNSRootAmpDoS-IPs.txt`; do dig @"$i" . NS; done > DNSRootAmpDoS-Output.txt
+
+-------------------- CVE-2002-1623
+Nessus: IKE Server Allows Aggressive Mode for Shared Secret Authentication
+
+root@kali:~# for i in `cat IKE-AggresiveMode-IPs.txt`; do sudo ike-scan -M -A "$i"; done > IKE-AggresiveMode-Output.txt
+
+-------------------- CVE-2003-1567, CVE-2004-2320, CVE-2010-0386
+Nessus: HTTP TRACE / TRACK Methods Allowed
+
+root@kali:~# paste Trace-IPs-SSL.txt | while read IP port; do echo "----START "$IP":"$port"----"; echo -e "TRACE / HTTP/1.0\n\n" | ncat --ssl "$IP" "$port"; echo -e "\n----END "$IP":"$port"----\n"; done > Trace-SSL-IPs-Output.txt
+
+-------------------- CVE-2006-3918, CVE-2007-5944
+Nessus: Web Server Expect Header XSS
+
+root@kali:~# for i in `cat ExpectHeaderXss-IPs.txt`; do echo -e "\n----START "$i"----" ; echo -e "GET / HTTP/1.0\nExpect: <script>alert(1)</script>\n\n" | openssl s_client -quiet -connect "$i":443; echo -e "\n----END "$i"----"; done > M-ExpectHeaderXss-Output.txt
+
+-------------------- CVE-2007-6203
+Nessus: Apache HTTP Method Request Entity XSS 
+
+root@kali:~# for i in `cat ApacheMethodRequestXSS-IPs.txt`; do echo -e "\n----START "$i"----" ; echo -e "<script>alert(1)</script> / HTTP/1.1\nHost: foundstone.com\nConnection: close\nContent-length: -1\n\n" | nc "$i" 80; echo -e "\n----END "$i"----"; done > ApacheMethodRequestXSS-Output.txt
+
+-------------------- Checking Remote NTP version
+
+root@kali:~# for i in `cat NTPVersion-IPs.txt`; do echo -e "\n----START "$i"----" ; ntpq -c readvar "$i"; echo -e "\n----END "$i"----"; done > NTPVersion-Output.txt
+
+
+
+
+
