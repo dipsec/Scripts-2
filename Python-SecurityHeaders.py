@@ -1,6 +1,7 @@
 import urllib2
+import sys
 
-url = ""
+url = sys.argv[1]
 
 req = urllib2.Request(url)
 res = urllib2.urlopen(req)
