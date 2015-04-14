@@ -1,0 +1,5 @@
+# Place in ~/.bashrc
+
+alias mount='mount |column -t'
+alias ping='ping -c 5'
+alias headers='curl -LIN'
