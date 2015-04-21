@@ -17,6 +17,7 @@ https://github.com/Veil-Framework/Veil-Pillage.git
 https://github.com/Veil-Framework/Veil.git
 https://github.com/alias1/sparty.git
 https://github.com/danielmiessler/SecLists.git
+https://github.com/DanMcInerney/net-creds.git
 https://github.com/fozavci/viproy-voipkit.git
 https://github.com/galkan/crowbar.git
 https://github.com/gentilkiwi/mimikatz.git
