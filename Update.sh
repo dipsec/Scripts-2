@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-echo -e "\e[1;34mUpdating. Please Wait.\e[0m"
+echo "Updating. Please Wait."
 sudo apt-get update
 sudo apt-get -y dist-upgrade
 sudo apt-get -y autoremove
