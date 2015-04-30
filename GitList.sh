@@ -38,6 +38,8 @@ https://github.com/sullo/nikto.git
 https://github.com/trustedsec/ridenum.git
 https://github.com/vk496/linset.git
 https://github.com/wpscanteam/wpscan.git
+https://github.com/securitytube/wifiscanvisualizer.git
+https://github.com/ShawnDEvans/smbmap.git
 EOF`
 
 cd /home/js/Desktop/Tools
