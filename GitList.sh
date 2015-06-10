@@ -40,6 +40,14 @@ https://github.com/vk496/linset.git
 https://github.com/wpscanteam/wpscan.git
 https://github.com/securitytube/wifiscanvisualizer.git
 https://github.com/ShawnDEvans/smbmap.git
+https://github.com/macubergeek/gitlist.git
+
+https://github.com/1N3/BruteX.git
+
+https://github.com/inquisb/icmpsh.git
+
+https://github.com/byt3bl33d3r/MITMf.git
+
 EOF`
 
 cd /home/js/Desktop/Tools
