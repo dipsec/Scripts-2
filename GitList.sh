@@ -44,6 +44,7 @@ https://github.com/macubergeek/gitlist.git
 https://github.com/1N3/BruteX.git
 https://github.com/inquisb/icmpsh.git
 https://github.com/byt3bl33d3r/MITMf.git
+https://github.com/Snifer/security-cheatsheets.git
 EOF`
 
 cd /home/js/Desktop/Tools
