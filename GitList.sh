@@ -7,6 +7,7 @@ https://github.com/DanMcInerney/net-creds.git
 https://github.com/DanMcInerney/wifijammer.git
 https://github.com/Dionach/CMSmap.git
 https://github.com/DoddyHackman/Cookies_Manager.git
+https://github.com/Hypsurus/ftpmap.git
 https://github.com/JKO/nsearch.git
 https://github.com/P0cL4bs/3vilTwinAttacker.git
 https://github.com/PenturaLabs/Linux_Exploit_Suggester.git
@@ -37,6 +38,7 @@ https://github.com/offensive-security/exploit-database.git
 https://github.com/pentestmonkey/gateway-finder.git
 https://github.com/rfunix/Pompem.git
 https://github.com/robertdavidgraham/masscan.git
+https://github.com/RUB-NDS/WS-Attacker.git
 https://github.com/secforce/sparta.git
 https://github.com/securitytube/wifiscanvisualizer.git
 https://github.com/shinnok/johnny

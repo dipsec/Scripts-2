@@ -1,4 +1,4 @@
-Bash One-liners to Validate Vulnerabilities on Multiple Hosts
+Bash One-liners
 http://blog.opensecurityresearch.com/2012/10/for-loops-bash-one-liners-to-validate.html 
 -------------------------------------------------------------
 
@@ -48,7 +48,6 @@ root@kali:~# for i in `cat ApacheMethodRequestXSS-IPs.txt`; do echo -e "\n----ST
 
 root@kali:~# for i in `cat NTPVersion-IPs.txt`; do echo -e "\n----START "$i"----" ; ntpq -c readvar "$i"; echo -e "\n----END "$i"----"; done > NTPVersion-Output.txt
 
+-------------------- Open multiple links from text file with Firefox/Iceweasel
 
-
-
-
+root@kali:~# firefox $(cat links.txt)
