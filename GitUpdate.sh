@@ -1,8 +1,8 @@
 #!/bin/bash
-cd /home/js/Desktop/Tools
+cd /home/jamie/Desktop/Tools
 for i in `ls`
 do
 cd $i
 sudo git pull
-cd /home/js/Desktop/Tools
+cd /home/jamie/Desktop/Tools
 done

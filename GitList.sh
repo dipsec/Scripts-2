@@ -50,7 +50,7 @@ https://github.com/vk496/linset.git
 https://github.com/wpscanteam/wpscan.git
 EOF`
 
-cd /home/js/Desktop/Tools
+cd /home/jamie/Desktop/Tools
 for i in $list
 do
 git clone $i
