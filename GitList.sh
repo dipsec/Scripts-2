@@ -7,6 +7,7 @@ https://github.com/DanMcInerney/net-creds.git
 https://github.com/DanMcInerney/wifijammer.git
 https://github.com/Dionach/CMSmap.git
 https://github.com/DoddyHackman/Cookies_Manager.git
+https://github.com/dxa4481/WPA2-HalfHandshake-Crack.git
 https://github.com/Hypsurus/ftpmap.git
 https://github.com/JKO/nsearch.git
 https://github.com/P0cL4bs/3vilTwinAttacker.git
@@ -45,7 +46,13 @@ https://github.com/shinnok/johnny
 https://github.com/sophron/wifiphisher.git
 https://github.com/sqlmapproject/sqlmap.git
 https://github.com/sullo/nikto.git
+https://github.com/trustedsec/egressbuster.git
+https://github.com/trustedsec/hash_parser.git
+https://github.com/trustedsec/meterssh.git
+https://github.com/trustedsec/pivoter.git
+https://github.com/trustedsec/ptf.git
 https://github.com/trustedsec/ridenum.git
+https://github.com/trustedsec/unicorn.git
 https://github.com/vk496/linset.git
 https://github.com/wpscanteam/wpscan.git
 EOF`
