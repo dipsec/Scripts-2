@@ -55,6 +55,7 @@ https://github.com/trustedsec/ridenum.git
 https://github.com/trustedsec/unicorn.git
 https://github.com/vk496/linset.git
 https://github.com/wpscanteam/wpscan.git
+https://github.com/NytroRST/NetRipper.git
 EOF`
 
 cd /home/jamie/Desktop/Tools
