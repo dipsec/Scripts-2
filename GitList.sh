@@ -57,6 +57,7 @@ https://github.com/vk496/linset.git
 https://github.com/wpscanteam/wpscan.git
 https://github.com/NytroRST/NetRipper.git
 https://github.com/byt3bl33d3r/CrackMapExec.git
+https://github.com/OJ/gobuster.git
 EOF`
 
 cd /home/jamie/Desktop/Tools
