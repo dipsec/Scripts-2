@@ -60,6 +60,7 @@ https://github.com/byt3bl33d3r/CrackMapExec.git
 https://github.com/OJ/gobuster.git
 https://github.com/espreto/wpsploit.git
 https://github.com/dloss/python-pentest-tools.git
+https://github.com/El3ct71k/AutoBrowser.git
 EOF`
 
 cd /home/jamie/Desktop/Tools
