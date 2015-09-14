@@ -61,6 +61,10 @@ https://github.com/OJ/gobuster.git
 https://github.com/espreto/wpsploit.git
 https://github.com/dloss/python-pentest-tools.git
 https://github.com/El3ct71k/AutoBrowser.git
+https://github.com/1N3/Sn1per.git
+https://github.com/portcullislabs/rdp-sec-check.git
+https://github.com/portcullislabs/enum4linux.git
+https://github.com/portcullislabs/ssl-cipher-suite-enum.git
 EOF`
 
 cd /home/jamie/Desktop/Tools
